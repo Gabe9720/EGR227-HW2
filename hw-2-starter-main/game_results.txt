@@ -1,0 +1,20 @@
+Your guess: a
+Sorry, there are no a's
+
+Your guess: g
+Sorry, there are no g's
+
+Your guess: e
+Sorry, there are no e's
+
+Your guess: h
+Sorry, there are no h's
+
+Your guess: j
+Sorry, there are no j's
+
+Your guess: k
+Sorry, there are no k's
+
+Game result: Loss
+The word was: brucin
