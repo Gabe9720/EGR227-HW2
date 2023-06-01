@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HangmanGame {
-    private static final String DICTIONARY_FILE = "C:\\Users\\jwoma\\IdeaProjects\\EGR227-HW2\\hw-2-starter-main\\dictionary.txt";
+    private static final String DICTIONARY_FILE = "dictionary.txt";
 
     private HangmanManager hangmanManager;
     private Scanner consoleScanner;
@@ -54,7 +54,7 @@ public class HangmanGame {
 
     private PrintWriter createOutputFile() {
         try {
-            return new PrintWriter(new FileWriter("C:\\Users\\jwoma\\IdeaProjects\\EGR227-HW2\\game_results.txt"));
+            return new PrintWriter(new FileWriter("game_results.txt"));
         } catch (IOException e) {
             System.out.println("Failed to create the output file.");
             System.exit(1);
@@ -63,7 +63,7 @@ public class HangmanGame {
     }
 
     private void deleteOutputFile() {
-        File outputFile = new File("C:\\Users\\jwoma\\IdeaProjects\\EGR227-HW2\\game_results.txt");
+        File outputFile = new File("game_results.txt");
         if (outputFile.exists()) {
             try {
                 Files.delete(outputFile.toPath());
